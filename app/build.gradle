@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'kr.co.bullets.chapater3'
+    namespace 'kr.co.bullets.chapter3'
     compileSdk 32
 
     defaultConfig {
-        applicationId "kr.co.bullets.chapater3"
+        applicationId "kr.co.bullets.chapter3"
         minSdk 28
         targetSdk 32
         versionCode 1

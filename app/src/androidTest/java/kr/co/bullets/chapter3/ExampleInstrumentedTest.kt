@@ -1,4 +1,4 @@
-package kr.co.bullets.chapater3
+package kr.co.bullets.chapter3
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

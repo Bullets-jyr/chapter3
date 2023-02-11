@@ -1,4 +1,4 @@
-package kr.co.bullets.chapater3
+package kr.co.bullets.chapter3
 
 import org.junit.Test
 

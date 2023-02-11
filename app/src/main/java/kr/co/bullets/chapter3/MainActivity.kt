@@ -1,10 +1,10 @@
-package kr.co.bullets.chapater3
+package kr.co.bullets.chapter3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.core.widget.addTextChangedListener
-import kr.co.bullets.chapater3.databinding.ActivityMainBinding
+import kr.co.bullets.chapter3.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -64,11 +64,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // As your activity begins to stop,
+    // the system calls the onSaveInstanceState() method so your activity can save state information to an instance state bundle.
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putBoolean("cmToM", cmToM)
         super.onSaveInstanceState(outState)
     }
 
+    // Instead of restoring the state during onCreate() you may choose to implement onRestoreInstanceState(),
+    // which the system calls after the onStart() method.
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         cmToM = savedInstanceState.getBoolean("cmToM")
         Log.d("cmToM", cmToM.toString())
